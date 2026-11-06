@@ -95,7 +95,7 @@ class NetworkView(Gtk.Box):  # type: ignore
         title_box.append(title_label)
 
         sub_label = Gtk.Label(
-            text="Conecte-se à internet para atualizar pacotes ou instale offline usando a mídia local."
+            label="Conecte-se à internet para atualizar pacotes ou instale offline usando a mídia local."
         )
         sub_label.add_css_class("dim-label")
         title_box.append(sub_label)

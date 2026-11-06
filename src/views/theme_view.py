@@ -76,7 +76,7 @@ class ThemeView(Gtk.Box):  # type: ignore
         title_box.append(title_label)
 
         sub_label = Gtk.Label(
-            text="Personalize a aparência do seu sistema. Você pode alterar isso depois a qualquer momento."
+            label="Personalize a aparência do seu sistema. Você pode alterar isso depois a qualquer momento."
         )
         sub_label.add_css_class("dim-label")
         title_box.append(sub_label)

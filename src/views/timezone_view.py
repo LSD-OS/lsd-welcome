@@ -98,7 +98,7 @@ class TimezoneView(Gtk.Box):  # type: ignore
         title_box.append(title_label)
 
         sub_label = Gtk.Label(
-            text="Selecione sua cidade no mapa mundi ou digite o nome no campo de busca."
+            label="Selecione sua cidade no mapa mundi ou digite o nome no campo de busca."
         )
         sub_label.add_css_class("dim-label")
         title_box.append(sub_label)

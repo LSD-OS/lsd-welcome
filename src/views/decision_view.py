@@ -77,7 +77,7 @@ class DecisionView(Gtk.Box):  # type: ignore
         title_box.append(title_label)
 
         sub_label = Gtk.Label(
-            text="Tudo pronto! Você pode explorar o ambiente Live ou instalar definitivamente no seu computador."
+            label="Tudo pronto! Você pode explorar o ambiente Live ou instalar definitivamente no seu computador."
         )
         sub_label.add_css_class("dim-label")
         title_box.append(sub_label)
@@ -113,7 +113,7 @@ class DecisionView(Gtk.Box):  # type: ignore
         try_card.append(try_title)
 
         try_desc = Gtk.Label(
-            text="Explore a área de trabalho COSMIC sem alterar seus discos. Suas preferências já estão ativas."
+            label="Explore a área de trabalho COSMIC sem alterar seus discos. Suas preferências já estão ativas."
         )
         try_desc.add_css_class("dim-label")
         try_desc.set_justify(Gtk.Justification.CENTER)
@@ -150,7 +150,7 @@ class DecisionView(Gtk.Box):  # type: ignore
         install_card.append(install_title)
 
         install_desc = Gtk.Label(
-            text="Inicie a instalação permanente em disco. O assistente de particionamento abrirá em seguida."
+            label="Inicie a instalação permanente em disco. O assistente de particionamento abrirá em seguida."
         )
         install_desc.add_css_class("dim-label")
         install_desc.set_justify(Gtk.Justification.CENTER)

@@ -138,7 +138,7 @@ class KeyboardView(Gtk.Box):  # type: ignore
         title_box.append(title_label)
 
         sub_label = Gtk.Label(
-            text="Escolha a disposição correta e teste a digitação com acentos abaixo."
+            label="Escolha a disposição correta e teste a digitação com acentos abaixo."
         )
         sub_label.add_css_class("dim-label")
         title_box.append(sub_label)

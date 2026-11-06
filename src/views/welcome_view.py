@@ -107,7 +107,7 @@ class WelcomeView(Gtk.Box):  # type: ignore
 
         # Subtitle
         sub_label = Gtk.Label(
-            text="Selecione o idioma de sua preferência para configurar o sistema:"
+            label="Selecione o idioma de sua preferência para configurar o sistema:"
         )
         sub_label.add_css_class("body")
         sub_label.add_css_class("dim-label")
