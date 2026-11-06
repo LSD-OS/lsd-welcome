@@ -71,7 +71,7 @@ class ThemeView(Gtk.Box):  # type: ignore
             spacing=8,
             halign=Gtk.Align.CENTER,
         )
-        title_label = Gtk.Label(text="Aparência do COSMIC")
+        title_label = Gtk.Label(label="Aparência do COSMIC")
         title_label.add_css_class("title-1")
         title_box.append(title_label)
 
@@ -137,11 +137,11 @@ class ThemeView(Gtk.Box):  # type: ignore
         icon.set_pixel_size(48)
         content.append(icon)
 
-        t_lbl = Gtk.Label(text=title)
+        t_lbl = Gtk.Label(label=title)
         t_lbl.add_css_class("heading")
         content.append(t_lbl)
 
-        d_lbl = Gtk.Label(text=description)
+        d_lbl = Gtk.Label(label=description)
         d_lbl.add_css_class("dim-label")
         d_lbl.set_justify(Gtk.Justification.CENTER)
         d_lbl.set_wrap(True)

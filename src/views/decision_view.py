@@ -72,7 +72,7 @@ class DecisionView(Gtk.Box):  # type: ignore
             spacing=8,
             halign=Gtk.Align.CENTER,
         )
-        title_label = Gtk.Label(text="O que você quer fazer agora?")
+        title_label = Gtk.Label(label="O que você quer fazer agora?")
         title_label.add_css_class("title-1")
         title_box.append(title_label)
 
@@ -108,7 +108,7 @@ class DecisionView(Gtk.Box):  # type: ignore
         try_icon.set_pixel_size(48)
         try_card.append(try_icon)
 
-        try_title = Gtk.Label(text="Experimentar o LSD_OS")
+        try_title = Gtk.Label(label="Experimentar o LSD_OS")
         try_title.add_css_class("heading")
         try_card.append(try_title)
 
@@ -145,7 +145,7 @@ class DecisionView(Gtk.Box):  # type: ignore
         install_icon.set_pixel_size(48)
         install_card.append(install_icon)
 
-        install_title = Gtk.Label(text="Instalar no Computador")
+        install_title = Gtk.Label(label="Instalar no Computador")
         install_title.add_css_class("heading")
         install_card.append(install_title)
 

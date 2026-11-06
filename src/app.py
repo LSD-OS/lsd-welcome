@@ -257,7 +257,7 @@ class WelcomeWizard:
         nav_box.append(self.back_button)
 
         # Step indicator in center
-        self.step_label = Gtk.Label(text="Passo 1 de 6")
+        self.step_label = Gtk.Label(label="Passo 1 de 6")
         self.step_label.add_css_class("step-indicator")
         self.step_label.set_hexpand(True)
         self.step_label.set_halign(Gtk.Align.CENTER)

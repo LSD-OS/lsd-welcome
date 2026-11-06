@@ -93,7 +93,7 @@ class TimezoneView(Gtk.Box):  # type: ignore
             spacing=6,
             halign=Gtk.Align.CENTER,
         )
-        title_label = Gtk.Label(text="Fuso Horário & Localização")
+        title_label = Gtk.Label(label="Fuso Horário & Localização")
         title_label.add_css_class("title-1")
         title_box.append(title_label)
 

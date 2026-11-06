@@ -100,7 +100,7 @@ class WelcomeView(Gtk.Box):  # type: ignore
             self.append(logo_img)
 
         # Title
-        title_label = Gtk.Label(text="Bem-vindo ao LSD_OS")
+        title_label = Gtk.Label(label="Bem-vindo ao LSD_OS")
         title_label.add_css_class("title-1")
         title_label.add_css_class("welcome-title")
         self.append(title_label)

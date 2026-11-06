@@ -90,7 +90,7 @@ class NetworkView(Gtk.Box):  # type: ignore
             spacing=6,
             halign=Gtk.Align.CENTER,
         )
-        title_label = Gtk.Label(text="Conexão com a Internet")
+        title_label = Gtk.Label(label="Conexão com a Internet")
         title_label.add_css_class("title-1")
         title_box.append(title_label)
 
@@ -127,7 +127,7 @@ class NetworkView(Gtk.Box):  # type: ignore
         wired_box.append(wired_icon)
 
         wired_text = "Rede cabeada (Ethernet): Conectada" if has_wired else "Rede cabeada: Desconectada"
-        self.wired_label = Gtk.Label(text=wired_text)
+        self.wired_label = Gtk.Label(label=wired_text)
         self.wired_label.add_css_class("heading" if has_wired else "dim-label")
         wired_box.append(self.wired_label)
 
@@ -187,7 +187,7 @@ class NetworkView(Gtk.Box):  # type: ignore
 
         if not networks:
             empty_row = Gtk.ListBoxRow()
-            lbl = Gtk.Label(text="Nenhuma rede Wi-Fi encontrada ou placa sem fio ausente.")
+            lbl = Gtk.Label(label="Nenhuma rede Wi-Fi encontrada ou placa sem fio ausente.")
             lbl.add_css_class("dim-label")
             lbl.set_margin_top(12)
             lbl.set_margin_bottom(12)
@@ -216,7 +216,7 @@ class NetworkView(Gtk.Box):  # type: ignore
             hbox.append(icon)
 
             # SSID
-            ssid_lbl = Gtk.Label(text=ssid)
+            ssid_lbl = Gtk.Label(label=ssid)
             ssid_lbl.set_halign(Gtk.Align.START)
             ssid_lbl.set_hexpand(True)
             if active:
@@ -231,7 +231,7 @@ class NetworkView(Gtk.Box):  # type: ignore
 
             # Connect button or Connected badge
             if active:
-                badge = Gtk.Label(text="Conectado")
+                badge = Gtk.Label(label="Conectado")
                 badge.add_css_class("success")
                 hbox.append(badge)
             else:
@@ -315,7 +315,7 @@ class NetworkView(Gtk.Box):  # type: ignore
         box.set_margin_start(16)
         box.set_margin_end(16)
 
-        lbl = Gtk.Label(text=f"Digite a senha para '{ssid}':")
+        lbl = Gtk.Label(label=f"Digite a senha para '{ssid}':")
         lbl.set_halign(Gtk.Align.START)
         box.append(lbl)
 
@@ -327,7 +327,7 @@ class NetworkView(Gtk.Box):  # type: ignore
         spinner = Gtk.Spinner()
         status_box.append(spinner)
 
-        status_lbl = Gtk.Label(text="")
+        status_lbl = Gtk.Label(label="")
         status_lbl.set_halign(Gtk.Align.START)
         status_box.append(status_lbl)
         box.append(status_box)

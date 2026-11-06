@@ -133,7 +133,7 @@ class KeyboardView(Gtk.Box):  # type: ignore
             spacing=8,
             halign=Gtk.Align.CENTER,
         )
-        title_label = Gtk.Label(text="Disposição do Teclado")
+        title_label = Gtk.Label(label="Disposição do Teclado")
         title_label.add_css_class("title-1")
         title_box.append(title_label)
 
@@ -166,7 +166,7 @@ class KeyboardView(Gtk.Box):  # type: ignore
             spacing=8,
             halign=Gtk.Align.CENTER,
         )
-        test_label = Gtk.Label(text="Teste de digitação:")
+        test_label = Gtk.Label(label="Teste de digitação:")
         test_label.add_css_class("heading")
         test_label.set_halign(Gtk.Align.START)
         test_box.append(test_label)
